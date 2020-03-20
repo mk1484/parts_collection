@@ -1,6 +1,6 @@
 <template>
  <div class="">
-  <button class="default-btn">{{ msg }}</button>
+  <button class="default-btn" @click="add">{{ msg }}</button>
  </div>
 </template>
 
@@ -25,6 +25,11 @@
             msg: {
                 type: String,
                 default: '基本のボタン',
+            }
+        },
+        methods: {
+            add(){
+                this.$emit('add');
             }
         }
     };
