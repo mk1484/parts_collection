@@ -5,7 +5,7 @@ import MyButton from '../components/MyButton.vue'
 
 export default {
   component: MyButton,
-  title: 'Button'
+  title: 'MyButton'
 }
 
 export const withText = () => ({
