@@ -9,6 +9,8 @@
     <modal-btn @open="OpenModal"></modal-btn>
     <modal-window v-if="ShowModal"></modal-window>
     <modal-overlay v-if="ShowOverlay" @close="CloseModal"></modal-overlay>
+
+    <default-card></default-card>
   </div>
 </template>
 
@@ -17,13 +19,16 @@
     import ModalBtn from '@/components/ModalButton.vue'
     import ModalWindow from '@/components/ModalWindow.vue'
     import ModalOverlay from '@/components/ModalOverlay.vue'
+    import DefaultCard from '@/components/Card.vue'
+
 
     export default {
         components: {
             'default-btn': DefaultBtn,
             'modal-btn': ModalBtn,
             'modal-window': ModalWindow,
-            'modal-overlay': ModalOverlay
+            'modal-overlay': ModalOverlay,
+            'default-card': DefaultCard
 
         },
         data: function() {
